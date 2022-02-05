@@ -1,0 +1,24 @@
+body {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.resultsContainer {
+	margin-top: 20px;
+}
+
+.cryptoGreaterThan {
+	color: green;
+}
+
+.cryptoGreaterThan::before {
+	content: '\1F811';
+}
+
+.cryptoLessThan {
+	color: red;
+}
+
+.cryptoLessThan::before {
+	content: '\1F813';
+}

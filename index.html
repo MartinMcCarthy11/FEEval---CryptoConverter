@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Crypto Converter</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<fieldset>
+			<legend>Enter your amount and select a currency</legend>
+			<label for="currencyInput">Currency</label>
+			<input id="currencyInput" type="number" />
+
+			<label for="currencySelector">Choose a currency</label>
+			<select id="currencySelector" aria-label="Currency Dropdown">
+				<!--     <option value=""></option> -->
+				<option value="USD">USD</option>
+				<option value="EUR">EUR</option>
+				<option value="GBP">GBP</option>
+				<option value="CNY">CNY</option>
+				<option value="JPY">JPY</option>
+			</select>
+		</fieldset>
+
+		<div class="resultsContainer">
+			<span id="currentCryptoValue"
+				><i class="far fa-long-arrow-alt-down"></i
+			></span>
+			<span id="priceChangeSinceLastUpdate"
+				><i class="far fa-long-arrow-alt-down"></i
+			></span>
+		</div>
+	</body>
+	<script type="text/javascript" src="app.js"></script>
+</html>
